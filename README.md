@@ -33,10 +33,12 @@ Spam protection: Formspree honeypot field `_gotcha`.
 | A | www | 94.23.69.227 |
 | AAAA | @ | 2001:41d0:301:11::21 |
 | TXT | ovhcontrol | OZJ2IcJIZUKGaFGAZKP7fA |
+| TXT | ovhcontrol.www | OZJ2IcJIZUKGaFGAZKP7fA |
+| AAAA | www | 2001:41d0:301:11::21 |
 
 ## TODO
 
-- [ ] Enable Let's Encrypt SSL in OVH (after DNS propagates)
-- [ ] Add `www.blackmobiledetailing.com` to the OVH site
-- [ ] Add `.htaccess` redirect → `https://www.` (only after SSL is active)
+- [x] Enable Let's Encrypt SSL in OVH (root + www, active since 2026-10-01)
+- [x] Add `www.blackmobiledetailing.com` to the OVH site
+- [x] `.htaccess` redirect → `https://www.`
 - [ ] Test the form after go-live (check Formspree allowed domains)
